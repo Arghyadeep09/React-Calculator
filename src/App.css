@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+
+
+
+.container {
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: rgb(18, 24, 67);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for the input field */
+input[type='text'] {
+  width: calc(100% - 50px); /* Subtracting padding */
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 18px;
+  font-size: 18px;
+  font-family: cursive;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.row{
+  margin-left: 16px;
+}
+.lastrow{
+  margin-left: 16px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for the calculator buttons */
+.btn {
+  width: 70px;
+  height: 50px;
+  font-size: 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style for the equals button */
+.btn-equal {
+  background-color: #28a745;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the clear button */
+.btn-clear {
+  background-color: #dc3545;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #080707;
+  color: #fff;
+  
+}
+
+/* Active effect for buttons */
+.btn:active {
+  background-color: #318f4c;
 }
